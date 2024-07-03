@@ -1,3 +1,4 @@
-import cv2 # type: ignore
+import cv2 as cv 
 
-cv2.imread("chicky_512.png", 0)
+
+print(cv.__version__)
