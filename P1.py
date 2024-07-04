@@ -1,4 +1,7 @@
 import cv2 as cv 
+import numpy as np
 
-
-print(cv.__version__)
+print("hello")
+ls = cv.imread("chicky_512.png", 0)
+arr = np.array(ls)
+print(arr)
