@@ -8,8 +8,13 @@ print(img)
 
 cv.imshow("your image", img)
 
-cv.waitKey(1)
+k = cv.waitKey(0)
 
-cv.destroyAllWindows()
+if k == ord('d'):
+    cv.destroyAllWindows()
+elif k == ord('s'):
+    cv.imwrite("chicky_copy.png", img)
+    cv.destroyAllWindows()
 
-cv.imwrite("chicky_copy.png", img)
+
+
